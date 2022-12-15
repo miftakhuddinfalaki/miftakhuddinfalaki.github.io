@@ -1,0 +1,66 @@
+<div class="container">
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        {% if page.url == "/" %}
+        <div id="pesan-welcome" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+                <img src="{{site.baseurl}}/assets/img/profile-img3.jpg" class="rounded me-2" width="25px" alt="...">
+                <strong class="me-auto">Miftakhuddin Falaki (dev)</strong>
+                <small>just now</small>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body">
+                Hello... terimakasih sudah datang.
+            </div>
+        </div>
+        {% endif %}
+        <div id="pesan-maaf" class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-bs-delay="16000">
+            <div class="toast-header">
+                <img src="{{site.baseurl}}/assets/img/profile-img3.jpg" class="rounded me-2" width="25px" alt="...">
+                <strong class="me-auto">Miftakhuddin Falaki (dev)</strong>
+                <small>just now</small>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body">
+                Maaf fitur belum bisa dipakai.
+            </div>
+        </div>
+        <div id="pesan-req" class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-bs-delay="16000">
+            <div class="toast-header">
+                <img src="{{site.baseurl}}/assets/img/profile-img3.jpg" class="rounded me-2" width="25px" alt="...">
+                <strong class="me-auto">Miftakhuddin Falaki (dev)</strong>
+                <small>just now</small>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body">
+                Silakan gunakan kontak atau social link yang tersedia.
+            </div>
+        </div>
+        <div id="pesan-cv-404" class="toast" role="alert" aria-live="assertive" aria-atomic="true"
+            data-bs-delay="16000">
+            <div class="toast-header">
+                <img src="{{site.baseurl}}/assets/img/profile-img3.jpg" class="rounded me-2" width="25px" alt="...">
+                <strong class="me-auto">Miftakhuddin Falaki (dev)</strong>
+                <small>just now</small>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body">
+                Maaf ... Data kadaluarsa atau tidak ditemukan. <br>Silakan hubungi kontak atau social link yang
+                tersedia.
+            </div>
+        </div>
+        <div id="pesan-kontak" class="toast" role="alert" aria-live="assertive" aria-atomic="true"
+            data-bs-delay="16000">
+            <div class="toast-header">
+                <img src="{{site.baseurl}}/assets/img/profile-img3.jpg" class="rounded me-2" width="25px" alt="...">
+                <strong class="me-auto">Miftakhuddin Falaki (dev)</strong>
+                <small>just now</small>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body">
+                <i class="bi-whatsapp"></i> : <a href="http://wa.me/6283807303926">(+62) 838-0730-3926</a> <br>
+                <i class="bi bi-envelope"></i> : <a
+                    href="mailto:miftakhuddinfalaki@gmail.com">miftakhuddinfalaki@gmail.com</a>
+            </div>
+        </div>
+    </div>
+</div>

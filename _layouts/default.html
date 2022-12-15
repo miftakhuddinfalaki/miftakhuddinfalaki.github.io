@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    {% include components/head.html %}
+</head>
+
+<body>
+    <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+
+    {% include components/sidebar.html %}
+
+    {% if page.url == "/" %}
+
+    {% include components/hero.html %}
+
+    {% endif %}
+
+
+    <main id="main">
+        {{ content }}
+    </main>
+
+    {% include components/footer.html %}
+    {% include components/toast.html %}
+
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
+
+    {% include components/js.html %}
+
+</body>
+
+</html>

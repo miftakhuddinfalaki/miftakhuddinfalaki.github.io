@@ -1,0 +1,195 @@
+<section id="portfolio" class="portfolio section-bg">
+    <div class="container">
+
+        <div class="section-title">
+            <h2>Portfolio</h2>
+        </div>
+
+        <div class="row" data-aos="fade-up">
+            <div class="col-lg-12 d-flex justify-content-center">
+                <ul id="portfolio-flters">
+                    <li data-filter="*" class="filter-active"><i class="bi bi-card-list"></i> All</li>
+                    <li data-filter=".filter-app"><i class="bi bi-android2"></i> Android</li>
+                    <li data-filter=".filter-web"><i class="bi bi-browser-chrome"></i> Web</li>
+                    <li data-filter=".filter-service"><i class="bi bi-fire"></i> Service</li>
+                    <li data-filter=".filter-certificate"><i class="bi bi-patch-check-fill"></i> Certificate</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100" id="glist">
+
+            <!-- Portofolio galery -->
+            <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                <figure class="galery-hover"><img src="{{site.baseurl}}/assets/img/portfolio/niji.png" alt="..." />
+                    <figcaption><i class="bi bi-android2"></i>
+                        <h4>Android </h4>
+                        <h2>Niji Sticker For WhatsApp</h2>
+                    </figcaption><a href="{{site.baseurl}}/portfolio-details/niji-sticker"></a>
+                </figure>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                <figure class="galery-hover"><img src="{{site.baseurl}}/assets/img/portfolio/kiku-index-movie.png"
+                        alt="..." />
+                    <figcaption><i class="bi bi-browser-chrome"></i>
+                        <h4>Web </h4>
+                        <h2>KIM: Serach Movie</h2>
+                    </figcaption><a href="{{site.baseurl}}/portfolio-details/kim"></a>
+                </figure>
+            </div>
+            <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                <figure class="galery-hover"><img src="{{site.baseurl}}/assets/img/portfolio/W_1.jpg" class="img-fluid">
+                    <figcaption><i class="bi bi-browser-chrome"></i>
+                        <h4>Web </h4>
+                        <h2>KIM: Serach Movie</h2>
+                    </figcaption><a href="#"></a>
+                </figure>
+            </div>
+            <div class="col-lg-4 col-md-6 portfolio-item filter-service">
+                <figure class="galery-hover"><img src="{{site.baseurl}}/assets/img/portfolio/service-github.png"
+                        class="img-fluid">
+                    <figcaption><i class="bi bi-fire"></i>
+                        <h4>Service </h4>
+                        <h2>starter express api vercel</h2>
+                    </figcaption><a href="{{site.baseurl}}/portfolio-details/express-vercel-starter"></a>
+                </figure>
+            </div>
+            <div class="col-lg-4 col-md-6 portfolio-item filter-certificate">
+                <figure class="galery-hover"><img
+                        src="{{site.baseurl}}/assets/img/portfolio/S_digitelent_JWD_Page_1.jpg" class="img-fluid">
+                    <figcaption><i class="bi bi-fire"></i>
+                        <h4>Certificate </h4>
+                        <h2>VSGA: JWD</h2>
+                    </figcaption><a href="{{site.baseurl}}/portfolio-details/VSGA"></a>
+                </figure>
+            </div>
+            <div class="col-lg-4 col-md-6 portfolio-item filter-certificate">
+                <figure class="galery-hover"><img src="{{site.baseurl}}/assets/img/portfolio/S_LSPI.jpg"
+                        class="img-fluid">
+                    <figcaption><i class="bi bi-fire"></i>
+                        <h4>Certificate </h4>
+                        <h2>LSPI: JWD</h2>
+                    </figcaption><a href="{{site.baseurl}}/portfolio-details/LSPI"></a>
+                </figure>
+            </div>
+            <div class="col-lg-4 col-md-6 portfolio-item filter-other">
+                <figure class="galery-hover"><img src="" class="img-fluid">
+                    <figcaption><i class="bi bi-fire"></i>
+                        <h4>Other </h4>
+                        <h2>Other</h2>
+                    </figcaption><a href="https://kikukeii.github.io"></a>
+                </figure>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- <script>
+    // galery
+    function galeryF() {
+        datag = [
+            {
+                name: "Niji Sticker For WhatsApp",
+                img: "{{site.baseurl}}/assets/img/portfolio/niji.png",
+                link: "https://kikukeii.github.io/niji",
+                desc: "Aplikasi Niji Sticker For WhatsApp",
+                filter: "app",
+                icon: '<i class="bi bi-android2"></i>'
+            }
+            ,
+            {
+                name: "Kiku Index Movie",
+                img: "{{site.baseurl}}/assets/img/portfolio/kiku-index-movie.png",
+                link: "https://kiku-index-movie.vercel.app",
+                desc: "Web Serach Film",
+                filter: "web",
+                icon: '<i class="bi bi-browser-edge"></i>'
+            }
+            ,
+            {
+                name: "Bookcase.my.id",
+                img: "{{site.baseurl}}/assets/img/portfolio/bookcase.png",
+                link: "https://bookcase.my.id",
+                desc: "Blog Anime, Manga, Novel",
+                filter: "blog",
+                icon: '<i class="bi bi-journal-richtext"></i>'
+            }
+            ,
+            {
+                name: "WNIndo",
+                img: "{{site.baseurl}}/assets/img/portfolio/wnindo.png",
+                link: "https://wnindo.vercel.app",
+                desc: "Web Novel Bahasa Indoneia",
+                filter: "blog",
+                icon: '<i class="bi bi-journal-richtext"></i>'
+            }
+            ,
+            {
+                name: "Starter Kit CI4 APP",
+                img: "{{site.baseurl}}/assets/img/portfolio/ci4-app.png",
+                link: "https://github.com/kikuKeii/ci4app-starter",
+                desc: "",
+                filter: "service",
+                icon: '<i class="bi bi-fire"></i>'
+            }
+            ,
+            {
+                name: "Induksi Magnet",
+                img: "{{site.baseurl}}/assets/img/portfolio/induksi-m.png",
+                link: "https://github.com/kikuKeii/induksiMagnet",
+                desc: "Aplikasi Menhitung Rumus Induksi Magnet",
+                filter: "desktop",
+                icon: '<i class="bi bi-cpu"></i>'
+            }
+            ,
+            {
+                name: "Starter Kit Express API",
+                img: "{{site.baseurl}}/assets/img/portfolio/induksi-m.png",
+                link: "https://github.com/kikuKeii/starter-express-api-vercel",
+                desc: "Starter Kit Express API deploy on Vercel.app",
+                filter: "service",
+                icon: '<i class="bi bi-fire"></i>'
+
+            }
+            ,
+            {
+                name: "Lize Tea Time",
+                img: "{{site.baseurl}}/assets/img/portfolio/404.png",
+                link: "#",
+                desc: "Music Player",
+                filter: "bot",
+                icon: '<i class="bi bi-robot"></i>'
+            }
+            ,
+            {
+                name: "keiiKomik",
+                img: "{{site.baseurl}}/assets/img/portfolio/keiikomik.png",
+                link: "https://keiikomik.vercel.app",
+                desc: "Web Review Manga",
+                filter: "web",
+                icon: '<i class="bi bi-browser-edge"></i>'
+            }
+            ,
+        ]
+        datag.forEach(function (g) {
+            gs(g);
+        });
+        function gs(g) {
+            var div = document.createElement('div');
+            div.setAttribute('class', `col-lg-4 col-md-6 portfolio-item filter-${g.filter}`);
+            div.innerHTML = `<figure class="galery-hover"><img
+                    src="${g.img}" alt="${g.name}" />
+                <figcaption>${g.icon}
+                    <h4>${g.filter} </h4>
+                    <h2>${g.name}</h2>
+                </figcaption><a href="${g.link}"></a>
+            </figure>`
+            document.querySelector("#glist").appendChild(div);
+        }
+        portfolioIsotope.arrange({
+            filter: this.getAttribute('data-filter')
+        });
+    }
+
+    window.onload = galeryF;
+</script> -->

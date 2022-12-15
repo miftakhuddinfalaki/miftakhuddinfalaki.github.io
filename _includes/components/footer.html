@@ -1,0 +1,17 @@
+<footer id="footer">
+    <div class="container">
+        <div class="copyright">
+            <i class="bi bi-journal-code"></i> <strong><span></span></strong>
+        </div>
+        <div class="credits">
+            <i id="tahun"></i>
+        </div>
+    </div>
+</footer>
+<script>
+    // get years
+    const d = new Date();
+    let year = d.getFullYear();
+
+    document.getElementById("tahun").innerHTML = '2021 - ' + year;
+</script>
