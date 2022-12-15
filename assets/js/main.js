@@ -270,25 +270,23 @@ console.log(`
 
 --------------Miftakhuddin Falaki--------------
 `)
+console.log(`
+===============================================
+-----------------------------------------------
+     Web ini dibuat dengan Jekyll dengan 
+     Github Page sebagai Hostnya dan
+     Fierbase sebagai database untuk menyimpan
+     Kontak pesan yang diterima.
+
+--------------Miftakhuddin Falaki--------------
+`)
 
 // start toast
 const getIdPesan = document.getElementById('pesan-welcome')
-const startMessage = new bootstrap.Toast(getIdPesan)
-startMessage.show()
-
-// emailSend
-function emailSend() {
-  const getPesan = document.getElementById('pesan-maaf')
-  const showPesan = new bootstrap.Toast(getPesan)
-  showPesan.show()
-  const getPesan2 = document.getElementById('pesan-req')
-  const showPesan2 = new bootstrap.Toast(getPesan2)
-  showPesan2.show()
-  const getPesan3 = document.getElementById('pesan-kontak')
-  const showPesan3 = new bootstrap.Toast(getPesan3)
-  showPesan3.show()
+if (getIdPesan !== null) {
+  const startMessage = new bootstrap.Toast(getIdPesan)
+  startMessage.show()
 }
-
 // cv404
 function cv404() {
   var pesan = document.getElementById("cv404");
