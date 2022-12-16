@@ -32,24 +32,27 @@ if (formContact !== null) {
     });
 }
 const dbRef = ref(getDatabase(app));
-let i = 1;
-const idTbody = document.querySelector("#tbody-message")
+const idList = document.querySelector("#message-list-list")
 const idML = document.querySelector("#semua-mdl")
-if (idTbody !== null && idML !== null) {
+if (idList !== null && idML !== null) {
     get(child(dbRef, 'contact/')).then((snapshot) => {
         if (snapshot.exists()) {
             Object.keys(snapshot.val()).forEach((key) => {
-
-                var tr = document.createElement('tr');
-                tr.setAttribute('key', `${key}`);
-                tr.setAttribute('data-bs-toggle', `modal`);
-                tr.setAttribute('data-bs-target', `#modal_${key}`);
-                tr.innerHTML = `
-            <th scope="row">${i++}</th>
-            <td>${snapshot.val()[key].name}</td>
-            <td>${snapshot.val()[key].email}</td>
-            <td>${snapshot.val()[key].subject}</td>`
-                document.querySelector("#tbody-message").appendChild(tr);
+                const d_ = new Date(`${snapshot.val()[key].date}`);
+                var select = document.createElement('selection');
+                select.setAttribute('class', `list-group-item list-group-item-action`);
+                select.setAttribute('aria-current', `true`);
+                select.setAttribute('key', `${key}`);
+                select.setAttribute('data-bs-toggle', `modal`);
+                select.setAttribute('data-bs-target', `#modal_${key}`);
+                select.innerHTML = `
+                <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">From : <strong>${snapshot.val()[key].name}</strong></h5>
+                    <small>${d.getHours() + ":" + d.getMinutes() + " " + d.getDate() + "-" + d.getMonth() + "-" + d.getFullYear()}</small>
+                </div>
+                <p class="mb-1"> Email : ${snapshot.val()[key].email}</p>
+                <small>Subject : ${snapshot.val()[key].subject}</small>`
+                document.querySelector("#message-list-list").appendChild(select);
 
                 var div = document.createElement('div');
                 div.setAttribute('class', `modal fade`);
