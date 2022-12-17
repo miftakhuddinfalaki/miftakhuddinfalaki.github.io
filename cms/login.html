@@ -1,0 +1,153 @@
+---
+title: Login
+---
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    {% include components/head.html %}
+    <meta name="theme-color" content="#712cf9">
+
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+
+        .b-example-divider {
+            height: 3rem;
+            background-color: rgba(0, 0, 0, .1);
+            border: solid rgba(0, 0, 0, .15);
+            border-width: 1px 0;
+            box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+        }
+
+        .b-example-vr {
+            flex-shrink: 0;
+            width: 1.5rem;
+            height: 100vh;
+        }
+
+        .bi {
+            vertical-align: -.125em;
+            fill: currentColor;
+        }
+
+        .nav-scroller {
+            position: relative;
+            z-index: 2;
+            height: 2.75rem;
+            overflow-y: hidden;
+        }
+
+        .nav-scroller .nav {
+            display: flex;
+            flex-wrap: nowrap;
+            padding-bottom: 1rem;
+            margin-top: -1px;
+            overflow-x: auto;
+            text-align: center;
+            white-space: nowrap;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        html,
+        body {
+            height: 100%;
+        }
+
+        body {
+            display: flex;
+            align-items: center;
+            padding-top: 40px;
+            padding-bottom: 40px;
+            background-color: #f5f5f5;
+        }
+
+        .form-signin {
+            max-width: 330px;
+            padding: 15px;
+        }
+
+        .form-signin .form-floating:focus-within {
+            z-index: 2;
+        }
+
+        .form-signin input[type="email"] {
+            margin-bottom: -1px;
+            border-bottom-right-radius: 0;
+            border-bottom-left-radius: 0;
+        }
+
+        .form-signin input[type="password"] {
+            margin-bottom: 10px;
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+        }
+    </style>
+
+</head>
+
+<body class="text-center">
+
+    <main class="form-signin w-100 m-auto">
+        <div>
+            <a href="{{site.baseurl}}/"><i class="bi bi-door-open mb-4" style="font-size: 50;"></i>
+                <h1 class="h3 mb-3 fw-bold pt-3">Login Dulu</h1>
+            </a>
+
+            <div class="form-floating">
+                <input type="text" class="form-control" id="username-input" placeholder="username">
+                <label for="username-input">Username</label>
+            </div>
+            <div class="form-floating">
+                <input type="password" class="form-control" id="pass-input" placeholder="Password">
+                <label for="pass-input">Password</label>
+            </div>
+
+            <div class="checkbox mb-3">
+                <label>
+                    <input type="checkbox" value="remember-me" id="ingat-saya"> Remember me
+                </label>
+            </div>
+            <button class="w-100 btn btn-lg btn-primary" type="submit" id="login-btn">Login</button>
+            <i class="mt-5 mb-3 text-muted" id="tahun"></i>
+        </div>
+    </main>
+
+
+
+    {% include components/js.html %}
+    <script>
+        var _0xa09a = ["\x6F\x72\x69\x67\x69\x6E", "\x6C\x6F\x63\x61\x74\x69\x6F\x6E", "\x6B\x65\x65\x70\x4C\x6F\x67\x67\x65\x64\x49\x6E", "\x67\x65\x74\x49\x74\x65\x6D", "\x79\x65\x73", "\x75\x73\x65\x72", "\x70\x61\x72\x73\x65", "\x6F\x6E\x6C\x6F\x61\x64", "\x2F\x63\x6D\x73"]; const base_url = window[_0xa09a[1]][_0xa09a[0]]; var currentUser = null; function getUsername() { let _0xaacex4 = localStorage[_0xa09a[3]](_0xa09a[2]); if (_0xaacex4 == _0xa09a[4]) { currentUser = JSON[_0xa09a[6]](localStorage[_0xa09a[3]](_0xa09a[5])) } else { currentUser = JSON[_0xa09a[6]](sessionStorage[_0xa09a[3]](_0xa09a[5])) } } window[_0xa09a[7]] = function () { getUsername(); if (currentUser !== null) { window[_0xa09a[1]] = base_url + _0xa09a[8] } }
+        console.log(`
+###############################################
+-   *Message 3*                               -
+-                Hadeh .... -_-               -
+-                                             -
+###############################################
+===============================================
+-----------------------------------------------
+   Keamanan page ini kentang banget yang paham
+       Tolong jangan Ngadi ngadi jebol 
+       atau otak atik Private Key-nya
+       
+--------------Miftakhuddin Falaki--------------
+`)
+    </script>
+
+</body>
+
+</html>

@@ -257,7 +257,7 @@ $(".hover").mouseleave(
 
 console.log(`
 ###############################################
--                                             -
+-   *Message 1*                               -
 -                Hayo Lagi Apa ?              -
 -                                             -
 ###############################################
@@ -272,6 +272,7 @@ console.log(`
 `)
 console.log(`
 ===============================================
+-   *Message 2*                               -
 -----------------------------------------------
      Web ini dibuat dengan Jekyll dengan 
      Github Page sebagai Hostnya dan
@@ -300,4 +301,5 @@ function cv404() {
   const showPesan2 = new bootstrap.Toast(getPesan2)
   showPesan2.show()
 }
+
 
