@@ -1193,3 +1193,10 @@ figure.galery-hover.hover:after {
     padding-right: 20px 15px;
   }
 }
+
+.card>.raw {
+  padding-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90px;
+}
